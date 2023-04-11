@@ -13,12 +13,11 @@
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    /* height: 100vh; */
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -31,45 +30,46 @@ body{
 
 .cabecalho__menu{
     display: flex;
-    gap: 80px;
+    gap: 70px;
 }
 
 .cabecalho__menu__links{
-    font: 600 24px var(--font-secundaria);
+    font: 600 1.5rem var(--font-secundaria);
     color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .principal{
-    padding: 4% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .principal__conteudo{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 615px;
+    width: 50%;
 }
 
 .principal__conteudo__titulo{
     font-family: var(--font-principal);
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .principal__conteudo__titulo__destaque{
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .principal__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
 }
 
 .principal__conteudo__lista{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
 }
 
@@ -91,7 +91,7 @@ body{
 }
 
 .principal__conteudo__links__subtitulo{
-    font: normal 400 24px var(--font-principal);
+    font: normal 400 1.5rem var(--font-principal);
 }
 
 .principal__conteudo__links__ancora{
@@ -100,10 +100,10 @@ body{
     justify-content: center;
     gap: 16px;
     /* Tamanho */
-    width: 378px;
+    width: 50%;
     padding: 21.5px 0;
     /* Fonte e borda */
-    font: 600 24px var(--font-secundaria);
+    font: 600 1.5rem var(--font-secundaria);
     color: var(--cor-secundaria);
     text-decoration: none;
     text-align: center;
@@ -116,6 +116,10 @@ body{
     color: var(--cor-terciaria);
 }
 
+.principal__imagem{
+    width: 50%;
+}
+
 .rodape{
     display: flex;
     justify-content: center;
@@ -123,10 +127,27 @@ body{
     padding: 24px;
     /* Cor e fonte */
     background-color: var(--cor-terciaria);
-    font: 400 24px var(--font-secundaria);
+    font: 400 1.5rem var(--font-secundaria);
     color: var(--cor-primaria);
     text-align: center;
+}
 
+@media(max-width: 1200px){
 
+    .cabecalho{
+        padding: 5%;
+    }
 
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .principal{
+        flex-direction: column-reverse;
+        padding: 6% ;
+    }
+
+    .principal__conteudo{
+        width: auto;
+    }
 }
