@@ -66,11 +66,15 @@ body{
 .principal__conteudo__texto{
     font-size: 1.5rem;
     font-family: var(--font-secundaria);
+    text-align: center;
+    line-height: 1.9rem;
 }
 
 .principal__conteudo__lista{
     font-size: 1.5rem;
     font-family: var(--font-secundaria);
+    list-style: none;
+    text-align: center;
 }
 
 .principal__conteudo__lista__links{
