@@ -4,50 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Portfólio</title>
 </head>
 <body>
 
     <header class="cabecalho">
+        <img class="img_logo" src="assets/Logo.png" alt="Logo">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__links" href="index.html">Home</a>
             <a class="cabecalho__menu__links" href="about.html">Sobre mim</a>
             <a class="cabecalho__menu__links" href="resume.html">Curriculo</a>
         </nav>
+        <a class="btn_contato cabecalho__menu__links" href="#">Contato</a>
     </header>
 
-    <main class="principal">
+    <section class="apresenta">
+        <pre>
+            <h1>FRONT<a target="_blank" class="link_icon" href="https://github.com/lupesii"><img width="100px" src="assets/GitHub Icon.png" alt=""></a><a target="_blank" class="link_icon" href="https://www.linkedin.com/in/lucas-silva-e-pereira/"><img width="100px" src="assets/Linkedin Icon.png" alt=""></a><a target="_blank" class="link_icon" href="https://www.instagram.com/_lupesi/"><img width="100px" src="assets/Instagram Icon.png" alt=""></a>
+DEVELOPER</h1>
+        </pre>
+        <img data-aos="fade-up" data-aos-duration="1000" class="seta_animacao" src="assets/down-arrow.png" alt="">
 
-        <section class="principal__conteudo">
+    </section>
 
-            <h1 class="principal__conteudo__titulo">Eleve seu negócio digital a outro nível <span class="principal__conteudo__titulo__destaque">com um Front-end de qualidade!</span></h1>
-            <p class="principal__conteudo__texto">Olá! Sou Lucas Pereira, desenvolvedor Front-end em andamento com especialidade em JavaScript, HTML e CSS. Aceito vagas de emprego remotos. Vamos conversar?</p>
 
-            <div class="principal__conteudo__links">
-                <h2 class="principal__conteudo__links__subtitulo">Acesse minhas redes:</h2>
-                <a class="principal__conteudo__links__ancora" href="https://www.linkedin.com/in/lucas-silva-e-pereira/" target="_blank">
-                    <img src="assets/linkedin.png" alt="Logo linkedin"> 
-                    Linkedin
-                </a>
-                <a class="principal__conteudo__links__ancora" href="https://github.com/lupesii" target="_blank">
-                    <img src="assets/github.png" alt="Logo Github">
-                    GitHub
-                </a>
-                <a class="principal__conteudo__links__ancora" href="https://twitch.tv/lupesi_">
-                    <img src="./assets/twitch.png">
-                    Twitch
-                </a>
-            </div>
-
-        </section>
-
-        <img class="principal__imagem" src="assets/fotoLinkedin.jpg" alt="Lucas Silva e Pereira">
-
-    </main>
-    <footer class="rodape">
-        <p>Desenvolvido por Lucas Pereira em parceria com Alura</p>
-    </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
